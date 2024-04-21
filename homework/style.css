@@ -1,0 +1,39 @@
+.parent-box {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  gap: 10px;
+}
+
+.box {
+  display: flex;
+  gap: 20px;
+}
+
+.image-box {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.image {
+  width: 200px;
+  height: 200px;
+}
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.title {
+  font-weight: bold;
+}
+.text li {
+  padding: 10px 10px;
+  list-style: none;
+  margin-left: 0;
+}
+.text {
+  align-self: flex-start;
+}
