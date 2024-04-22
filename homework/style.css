@@ -1,7 +1,7 @@
 .parent-box {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 25%); 
+  gap: 20px;
 }
 
 .box {
@@ -36,4 +36,138 @@
 }
 .text {
   align-self: flex-start;
+}
+
+.info-container{
+  background-color: rgba(252, 145, 145, 0.159);
+  display: grid;
+  grid-template-columns: repeat(3, 80%); 
+  gap: 20px;
+}
+.text-info{
+  width: 100%;
+}
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+  height: 55px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px){
+  .parent-box{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width:700px){
+  .parent-box{
+    display: flex;
+    flex-direction: column;
+  }
 }
