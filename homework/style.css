@@ -48,7 +48,7 @@
 .text-info {
   width: 100%;
 }
-.button {
+.button,.button-info {
   align-items: center;
   background-clip: padding-box;
   background-color: #fa6400;
