@@ -33,21 +33,23 @@
 .text li {
   padding: 10px 10px;
   list-style: none;
-  margin-left: 0;
+  left: 0;
 }
 .text {
   align-self: flex-start;
 }
 
 .info-container {
-  background-color: rgba(252, 145, 145, 0.159);
+  /* background-color: rgba(252, 145, 145, 0.159); */
   display: grid;
   grid-template-columns: repeat(3, 80%);
   width: 1090px;
+  margin-top: 30px;
 }
 .text-info {
   width: 100%;
 }
+
 .button,.button-info {
   align-items: center;
   background-clip: padding-box;
@@ -76,7 +78,8 @@
   touch-action: manipulation;
   vertical-align: baseline;
   width: 200px;
-  height: 55px; 
+  height: 55px;
+  margin-left: 4.5rem; 
 }
 
 
@@ -103,11 +106,19 @@
   display: grid;
   padding: 10px;
   gap: 10px;
+  justify-content: space-between;
 }
 
 @media (max-width: 1300px) {
   .parent-box {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .info-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+  .button-info{
+    margin-left: auto;
   }
 }
 
@@ -115,5 +126,9 @@
   .parent-box {
     display: flex;
     flex-direction: column;
+  }
+  .info-container{
+    width: auto;
+    gap: 10px;
   }
 }
