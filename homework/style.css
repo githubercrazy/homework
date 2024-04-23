@@ -1,6 +1,7 @@
 .parent-box {
   display: grid;
-  grid-template-columns: repeat(3, 25%); 
+  position: relative;
+  grid-template-columns: repeat(3, 25%);
   gap: 20px;
 }
 
@@ -11,13 +12,13 @@
 
 .image-box {
   background-color: red;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   text-align: center;
 }
 .image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .text-container {
   flex: 1;
@@ -38,13 +39,13 @@
   align-self: flex-start;
 }
 
-.info-container{
+.info-container {
   background-color: rgba(252, 145, 145, 0.159);
   display: grid;
-  grid-template-columns: repeat(3, 80%); 
-  gap: 20px;
+  grid-template-columns: repeat(3, 80%);
+  width: 1090px;
 }
-.text-info{
+.text-info {
   width: 100%;
 }
 .button {
@@ -52,20 +53,21 @@
   background-clip: padding-box;
   background-color: #fa6400;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -89,84 +91,42 @@
 
 .button:active {
   background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1300px){
-  .parent-box{
-    grid-template-columns: repeat(2, 1fr); 
+.side-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.title-text {
+  align-self: flex-start;
+  width: 290.33px;
+  height: 93.94px;
+  font-family: TBC Contractica;
+  font-size: 18spx;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-box {
+  display: grid;
+  padding: 20px;
+}
+
+@media (max-width: 1300px) {
+  .parent-box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width:700px){
-  .parent-box{
+@media (max-width: 700px) {
+  .parent-box {
     display: flex;
     flex-direction: column;
   }
