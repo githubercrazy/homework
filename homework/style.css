@@ -150,8 +150,7 @@
 
 @media (max-width: 700px) {
   .parent-box {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .info-container {
     width: auto;
@@ -160,4 +159,13 @@
   .button-info{
     margin-left: auto;
   }
+    .side-box-container{
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  
+}
+.header-button{
+  margin-left: -20%;
+  padding: 70px;
+}
 }
