@@ -123,7 +123,7 @@
 .header-button {
   display: grid;
   padding: 20px;
-  margin-left: 50%;
+  margin-left: 46%;
 }
 @media (max-width: 1300px) {
   .parent-box {
