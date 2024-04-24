@@ -143,6 +143,9 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
 } 
+.header-button{
+  margin-left: 45%;
+}
 }
 
 @media (max-width: 700px) {
