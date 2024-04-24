@@ -93,9 +93,12 @@
 
 .side-page {
   display: grid;
-  position: absolute;
   top: 0;
   right: 0;
+}
+.side-box-container{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 .title-text {
   align-self: flex-start;
@@ -112,7 +115,7 @@
   font-size: 20px;
   font-weight: bold;
 }
-.header-box {
+.side-box {
   display: grid;
   padding: 20px;
   justify-content: space-between;
@@ -120,6 +123,7 @@
 .header-button {
   display: grid;
   padding: 20px;
+  margin-left: 50%;
 }
 @media (max-width: 1300px) {
   .parent-box {
@@ -129,11 +133,13 @@
     grid-template-columns: repeat(2, 1fr);
     width: auto;
   }
-  .side-page {
-    position: relative;
+  .button-info{
+    margin-left: 100%;
   }
-  .header-box{
-    grid-template-columns: 1fr;
+
+  .side-box-main{
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 
@@ -145,5 +151,8 @@
   .info-container {
     width: auto;
     gap: 10px;
+  }
+  .button-info{
+    margin-left: auto;
   }
 }
