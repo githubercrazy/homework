@@ -92,14 +92,11 @@
 }
 
 .side-page {
-  display: grid;
+  position:absolute;
   top: 0;
   right: 0;
 }
-.side-box-container{
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-}
+
 .title-text {
   align-self: flex-start;
   width: 290.33px;
@@ -123,7 +120,6 @@
 .header-button {
   display: grid;
   padding: 20px;
-  margin-left: 46%;
 }
 @media (max-width: 1300px) {
   .parent-box {
@@ -136,11 +132,17 @@
   .button-info{
     margin-left: 100%;
   }
-
+  .side-page{
+    position: relative;
+  }
   .side-box-main{
     display: grid;
     grid-template-columns: auto;
   }
+   .side-box-container{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+} 
 }
 
 @media (max-width: 700px) {
