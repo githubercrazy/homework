@@ -46,11 +46,20 @@
   width: 1090px;
   margin-top: 30px;
 }
+.info-box {
+  background-color: cornflowerblue;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
 .text-info {
   width: 100%;
 }
-
-.button,.button-info {
+.button {
+  margin-right: auto;
+}
+.button,
+.button-info {
   align-items: center;
   background-clip: padding-box;
   background-color: #fa6400;
@@ -79,11 +88,11 @@
   vertical-align: baseline;
   width: 200px;
   height: 55px;
-  margin-left: 4.5rem; 
+  margin-left: 4.5rem;
 }
 
-
 .side-page {
+  display: grid;
   position: absolute;
   top: 0;
   right: 0;
@@ -97,6 +106,7 @@
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0em;
+  gap: 5px;
 }
 .header p {
   font-size: 20px;
@@ -104,21 +114,26 @@
 }
 .header-box {
   display: grid;
-  padding: 10px;
-  gap: 10px;
+  padding: 20px;
   justify-content: space-between;
 }
-
+.header-button {
+  display: grid;
+  padding: 20px;
+}
 @media (max-width: 1300px) {
   .parent-box {
     grid-template-columns: repeat(2, 1fr);
   }
-  .info-container{
+  .info-container {
     grid-template-columns: repeat(2, 1fr);
     width: auto;
   }
-  .button-info{
-    margin-left: auto;
+  .side-page {
+    position: relative;
+  }
+  .header-box{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -127,7 +142,7 @@
     display: flex;
     flex-direction: column;
   }
-  .info-container{
+  .info-container {
     width: auto;
     gap: 10px;
   }
