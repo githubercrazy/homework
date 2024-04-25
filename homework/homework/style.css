@@ -1,0 +1,165 @@
+.container{
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.parent-box {
+  flex: 1;
+  display: grid;
+}
+
+.box {
+  gap: 20px;
+  display: flex;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+.image-box {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.title {
+  font-weight: bold;
+}
+.text li {
+  padding: 10px 10px;
+  list-style: none;
+  left: 0;
+}
+.text {
+  align-self: flex-start;
+}
+
+.info-container {
+  /* background-color: rgba(252, 145, 145, 0.159); */
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.info-box {
+  background-color: cornflowerblue;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.text-info {
+  width: 100%;
+}
+
+
+.button-info{
+  width: 100%;
+}
+.button-page,
+.button-info {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+  height: 55px;
+}
+
+.side-page {
+  max-width: 300px;
+  flex: 1;
+  top: 0;
+  right: 0;
+}
+
+.title-text {
+  align-self: flex-start;
+  width: 290.33px;
+  height: 93.94px;
+  font-family: TBC Contractica;
+  font-size: 18spx;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  gap: 5px;
+}
+.header p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.side-box {
+  display: grid;
+  padding: 20px;
+  justify-content: space-between;
+}
+.header-button {
+  display: grid;
+  padding: 20px;
+}
+@media (max-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-container{
+   
+  }
+  .info-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .parent-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info-container {
+    width: auto;
+    gap: 10px;
+  }
+  .button-info{
+    margin-left: auto;
+  }
+    .side-box-container{
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  
+}
+.header-button{
+  margin-left: -20%;
+  padding: 70px;
+}
+}
