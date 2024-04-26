@@ -121,11 +121,13 @@
   margin: 0;
 }
 .side-box {
-  display: grid;
+
   padding: 15px;
+ display: flex;
 }
+
 .header-button {
-  display: grid;
+
   padding: 20px;
 }
 @media (max-width: 1300px) {
@@ -137,27 +139,23 @@
   }
 }
 @media (max-width: 1000px) {
-  .container{
+  .container {
     flex-direction: column;
   }
-  .side-box-container{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 30px;
+  .side-box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 @media (max-width: 700px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }
-  .info-container {
-    width: auto;
-    gap: 10px;
-  }
-  .button-info {
-    margin-left: auto;
-  }
+
+
   .side-box-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 }
