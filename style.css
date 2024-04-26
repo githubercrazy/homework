@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
@@ -12,7 +12,7 @@
   gap: 20px;
   display: flex;
 }
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 34px;
@@ -62,8 +62,7 @@
   width: 100%;
 }
 
-
-.button-info{
+.button-info {
   width: 100%;
 }
 .button-page,
@@ -103,12 +102,12 @@
   flex: 1;
   top: 0;
   right: 0;
+  padding-left: 45px;
 }
 
 .title-text {
   align-self: flex-start;
   width: 290.33px;
-  height: 93.94px;
   font-family: TBC Contractica;
   font-size: 18spx;
   font-weight: 500;
@@ -123,8 +122,7 @@
 }
 .side-box {
   display: grid;
-  padding: 20px;
-  justify-content: space-between;
+  padding: 15px;
 }
 .header-button {
   display: grid;
@@ -134,32 +132,32 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .text-container{
-   
-  }
   .info-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+@media (max-width: 1000px) {
+  .container{
+    flex-direction: column;
+  }
+  .side-box-container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+  }
+}
 @media (max-width: 700px) {
-  .parent-box {
+  .cards {
     grid-template-columns: repeat(1, 1fr);
   }
   .info-container {
     width: auto;
     gap: 10px;
   }
-  .button-info{
+  .button-info {
     margin-left: auto;
   }
-    .side-box-container{
-  display: grid;
-  grid-template-columns: repeat(1, 50%);
-  
-}
-.header-button{
-  margin-left: -20%;
-  padding: 70px;
-}
+  .side-box-container {
+    display: grid;
+  }
 }
